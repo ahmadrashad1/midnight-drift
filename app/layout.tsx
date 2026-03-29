@@ -23,8 +23,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: 'TOUGE_UNDERGROUND | Midnight Override',
-    description: 'Where rubber meets rebellion. Join the global Touge network.',
+    title: 'PINDI_UNDERGROUND | Midnight Override',
+    description: 'Where rubber meets rebellion. Join the global Pindi network.',
 };
 
 export default function RootLayout({

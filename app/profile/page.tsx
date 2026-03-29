@@ -192,8 +192,8 @@ export default function Profile() {
             {/* Footer */}
             <footer className="md:ml-72 bg-[#1C1B1B] py-8 px-10 flex flex-col md:flex-row justify-between items-end border-t-4 border-double border-[#5C3F46] bg-[url('https://www.transparenttextures.com/patterns/asphalt-dark.png')]">
                 <div className="mb-4 md:mb-0">
-                    <p className="text-[#FFB1C4] font-bold font-headline mb-2 uppercase">TOUGE_UNDERGROUND</p>
-                    <p className="font-mono text-[10px] tracking-tighter uppercase text-[#E5E2E1]">©2024_MIDNIGHT_TOUGE_INDUSTRIAL_GRIT.ALL_RIGHTS_RESERVED.</p>
+                    <p className="text-[#FFB1C4] font-bold font-headline mb-2 uppercase">PINDI_UNDERGROUND</p>
+                    <p className="font-mono text-[10px] tracking-tighter uppercase text-[#E5E2E1]">©2024_MIDNIGHT_PINDI_INDUSTRIAL_GRIT.ALL_RIGHTS_RESERVED.</p>
                 </div>
                 <div className="flex gap-6">
                     <a className="font-mono text-[10px] tracking-tighter uppercase text-[#E5E2E1]/40 hover:text-[#D7FFC5] hover:tracking-widest transition-all" href="#">DISCORD_LINK</a>

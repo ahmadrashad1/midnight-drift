@@ -22,10 +22,10 @@ export default function Navigation() {
             <Link href="/" className="pointer-events-auto group">
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 border-2 border-white flex items-center justify-center font-black text-xl italic group-hover:bg-white group-hover:text-black transition-colors duration-300">
-                        T_U
+                        P_U
                     </div>
                     <div className="leading-none hidden sm:block">
-                        <div className="text-lg font-black italic tracking-tighter">TOUGE</div>
+                        <span className="text-xl md:text-2xl font-black italic tracking-tighter text-[#E5E2E1] uppercase">PINDI_UNDERGROUND</span>
                         <div className="text-[8px] font-mono tracking-[0.3em] text-neonPink uppercase">Underground</div>
                     </div>
                 </div>

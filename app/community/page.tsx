@@ -14,7 +14,7 @@ export default function Community() {
                             <button className="text-[#FFB1C4] hover:animate-pulse lg:hidden">
                                 <span className="material-symbols-outlined" data-icon="menu">menu</span>
                             </button>
-                            <h1 className="text-xl font-black italic tracking-widest text-[#FFB1C4] hover:animate-pulse font-headline uppercase">TOUGE_UNDERGROUND</h1>
+                            <h1 className="text-xl font-black italic tracking-widest text-[#FFB1C4] hover:animate-pulse font-headline uppercase">PINDI_UNDERGROUND</h1>
                         </div>
                         <div className="hidden md:flex items-center gap-8">
                             <a className="text-[#D7FFC5] font-headline font-bold uppercase tracking-tighter text-sm hover:text-[#FFB1C4] transition-all duration-75" href="#">LIVE_FEED</a>
@@ -81,7 +81,7 @@ export default function Community() {
                                         <span className="material-symbols-outlined" data-icon="favorite" style={{ fontVariationSettings: "'FILL' 1" }}>favorite</span>
                                     </button>
                                 </div>
-                                <p className="text-on-surface-variant font-body text-sm mb-6 leading-relaxed italic">"Caught this Silvia S15 pushing the hairpins near the summit. The turbo flutter was deafening. #touge #silvia #midnight"</p>
+                                <p className="text-on-surface-variant font-body text-sm mb-6 leading-relaxed italic">"Caught this Silvia S15 pushing the hairpins near the summit. The turbo flutter was deafening. #pindi #silvia #midnight"</p>
                                 <div className="mt-auto flex flex-col gap-2">
                                     <div className="flex items-center justify-between text-[10px] font-label text-on-surface-variant tracking-widest uppercase mb-2 border-b border-outline-variant/20 pb-1">
                                         <span>COMMENTS [12]</span>
@@ -93,8 +93,9 @@ export default function Community() {
                                             <span className="text-[10px] text-on-surface-variant uppercase">Clean line through the third hairpin.</span>
                                         </div>
                                         <div className="flex gap-2">
-                                            <span className="text-primary font-black text-[10px] whitespace-nowrap">TOKYO_DRIFT:</span>
-                                            <span className="text-[10px] text-on-surface-variant uppercase">I was there. That car is a beast.</span>
+                                            <p className="text-[#FF4A8D] font-black italic tracking-widest text-lg sm:text-2xl drop-shadow-[0_0_10px_rgba(255,74,141,0.5)]">
+                                                PINDI_UNDERGROUND <span className="text-[#E5E2E1]/60 px-2 font-mono text-sm opacity-50 font-normal not-italic tracking-normal">LIVE_FEED</span>
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="mt-4 flex gap-2">
@@ -176,9 +177,9 @@ export default function Community() {
                         <div className="flex flex-col gap-4">
                             <div className="flex items-center gap-2">
                                 <div className="w-2 h-8 bg-[#FFB1C4]"></div>
-                                <span className="text-[#FFB1C4] font-bold font-headline text-xl italic tracking-widest uppercase">TOUGE_UNDERGROUND</span>
+                                <span className="text-[#FFB1C4] font-bold font-headline text-xl italic tracking-widest uppercase">PINDI_UNDERGROUND</span>
                             </div>
-                            <p className="text-[#E5E2E1] font-mono text-[10px] tracking-tighter uppercase max-w-xs opacity-60">©2024_MIDNIGHT_TOUGE_INDUSTRIAL_GRIT.ALL_RIGHTS_RESERVED.</p>
+                            <p className="text-[#E5E2E1] font-mono text-[10px] tracking-tighter uppercase max-w-xs opacity-60">©2024_MIDNIGHT_PINDI_INDUSTRIAL_GRIT.ALL_RIGHTS_RESERVED.</p>
                         </div>
                         <div className="flex flex-col md:items-end gap-6 mt-8 md:mt-0">
                             <div className="flex gap-8">

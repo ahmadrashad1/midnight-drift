@@ -11,12 +11,12 @@ export default function Calendar() {
                     <header className="mb-12">
                         <div className="inline-block bg-tertiary-container text-on-tertiary-container px-3 py-1 font-mono text-xs mb-4">SYSTEM_LIVE // SIGNAL_STRENGTH_MAX</div>
                         <h2 className="text-6xl md:text-8xl font-headline font-black uppercase italic tracking-tighter text-on-surface leading-none">
-                            UPCOMING<br /><span className="text-primary">GATHERINGS</span>
+                            PINDI <span className="text-primary tracking-normal">MEETS</span>
                         </h2>
                         <div className="mt-6 flex gap-4 overflow-x-auto pb-4 no-scrollbar">
                             <span className="shrink-0 bg-surface-container-high border border-outline-variant/20 px-4 py-2 text-xs font-mono uppercase tracking-widest text-secondary">FILTER: ALL_REGIONS</span>
                             <span className="shrink-0 bg-surface-container-low border border-outline-variant/20 px-4 py-2 text-xs font-mono uppercase tracking-widest text-on-surface/40">FILTER: DRIFT_ONLY</span>
-                            <span className="shrink-0 bg-surface-container-low border border-outline-variant/20 px-4 py-2 text-xs font-mono uppercase tracking-widest text-on-surface/40">FILTER: TOUGE_RUNS</span>
+                            <span className="shrink-0 bg-surface-container-low border border-outline-variant/20 px-4 py-2 text-xs font-mono uppercase tracking-widest text-on-surface/40">FILTER: PINDI_RUNS</span>
                         </div>
                     </header>
 
@@ -140,8 +140,8 @@ export default function Calendar() {
             {/* Footer */}
             <footer className="w-full py-8 px-10 flex flex-col md:flex-row justify-between items-end bg-[#1C1B1B] border-t-4 border-double border-[#5C3F46] bg-[url('https://www.transparenttextures.com/patterns/asphalt-dark.png')]">
                 <div className="flex flex-col gap-2">
-                    <span className="text-[#FFB1C4] font-bold text-lg font-headline">TOUGE_UNDERGROUND</span>
-                    <p className="text-[#E5E2E1] font-mono text-[10px] tracking-tighter uppercase">©2024_MIDNIGHT_TOUGE_INDUSTRIAL_GRIT.ALL_RIGHTS_RESERVED.</p>
+                    <span className="text-[#FFB1C4] font-bold text-lg font-headline">PINDI_UNDERGROUND</span>
+                    <p className="text-[#E5E2E1] font-mono text-[10px] tracking-tighter uppercase">©2024_MIDNIGHT_PINDI_INDUSTRIAL_GRIT.ALL_RIGHTS_RESERVED.</p>
                 </div>
                 <div className="flex gap-6 mt-6 md:mt-0">
                     <a className="text-[#E5E2E1]/40 font-mono text-[10px] tracking-tighter uppercase hover:text-[#D7FFC5] hover:tracking-widest transition-all" href="#">DISCORD_LINK</a>

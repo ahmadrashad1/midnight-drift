@@ -211,7 +211,7 @@ export default function Hero() {
                     </h1>
                     <div className="flex justify-center">
                         <p className="max-w-2xl font-mono text-toxicGreen text-xs md:text-base tracking-[0.2em] border-y border-toxicGreen/20 py-4 uppercase bg-midnightBlack/40 backdrop-blur-sm" data-purpose="subheadline">
-                            WHERE RUBBER MEETS REBELLION. JOIN THE GLOBAL TOUGE NETWORK.
+                            WHERE RUBBER MEETS REBELLION. JOIN THE GLOBAL PINDI NETWORK.
                         </p>
                     </div>
                     <div className="pt-8 flex flex-col sm:flex-row gap-6 justify-center items-center">

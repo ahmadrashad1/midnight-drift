@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar';
 export default function CrewRankings() {
     const crews = [
         { rank: '01', name: 'MIDNIGHT_KINGS', tag: 'MKNG', score: '1,420,950', pilots: 12, drift_stars: 45, status: 'DOMINATING' },
-        { rank: '02', name: 'TOUGE_MONSTERS', tag: 'TGMN', score: '1,385,220', pilots: 18, drift_stars: 38, status: 'RISING' },
+        { rank: '02', name: 'PINDI_MONSTERS', tag: 'PDMN', score: '1,385,220', pilots: 18, drift_stars: 38, status: 'RISING' },
         { rank: '03', name: 'SHIBUYA_SYNDICATE', tag: 'SHSY', score: '1,120,400', pilots: 10, drift_stars: 22, status: 'STABLE' },
         { rank: '04', name: 'WANGAN_WARRIORS', tag: 'WWRI', score: '950,230', pilots: 15, drift_stars: 15, status: 'STABLE' },
         { rank: '05', name: 'NEON_DRIFTERS', tag: 'NDFT', score: '820,110', pilots: 8, drift_stars: 10, status: 'RELEGATED' }
@@ -74,7 +74,7 @@ export default function CrewRankings() {
                             <h4 className="font-mono text-[10px] text-toxicGreen tracking-[0.3em] uppercase mb-4">Live_Circuit_Telemetry</h4>
                             <div className="space-y-3 font-mono text-[9px] text-white/40 lowercase italic">
                                 <p className="border-l border-neonPink pl-2">MIDNIGHT_KINGS detected at Wangan Interchange_ Sector_04.</p>
-                                <p className="border-l border-white/20 pl-2 opacity-50">TOUGE_MONSTERS initiated downhill run_ Mt_Haruna.</p>
+                                <p className="border-l border-white/20 pl-2 opacity-50">PINDI_MONSTERS initiated downhill run_ Mt_Haruna.</p>
                                 <p className="border-l border-white/20 pl-2 opacity-50">SHIBUYA_SYNDICATE telemetry synchronization failed_ Sector_01.</p>
                             </div>
                         </div>
