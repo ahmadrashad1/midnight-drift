@@ -14,17 +14,34 @@ export default function BackgroundMusic() {
     }, [volume]);
 
     useEffect(() => {
-        // Attempt auto-play on first user interaction if blocked
-        const handleInteraction = () => {
+        const attemptPlay = () => {
             if (audioRef.current && !isPlaying) {
                 audioRef.current.play().then(() => {
                     setIsPlaying(true);
-                }).catch(() => { });
+                    cleanup();
+                }).catch(() => {
+                    // Still blocked by browser
+                });
             }
-            window.removeEventListener('click', handleInteraction);
         };
-        window.addEventListener('click', handleInteraction);
-        return () => window.removeEventListener('click', handleInteraction);
+
+        const cleanup = () => {
+            window.removeEventListener('click', attemptPlay);
+            window.removeEventListener('keydown', attemptPlay);
+            window.removeEventListener('touchstart', attemptPlay);
+            window.removeEventListener('scroll', attemptPlay);
+        };
+
+        // Try immediately
+        attemptPlay();
+
+        // Also listen for any interaction
+        window.addEventListener('click', attemptPlay);
+        window.addEventListener('keydown', attemptPlay);
+        window.addEventListener('touchstart', attemptPlay);
+        window.addEventListener('scroll', attemptPlay);
+
+        return cleanup;
     }, [isPlaying]);
 
     return (
