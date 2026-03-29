@@ -1,0 +1,207 @@
+import Navigation from '../components/Navigation';
+import Sidebar from '../components/Sidebar';
+
+export default function Profile() {
+    return (
+        <div className="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen pt-16">
+            <Sidebar />
+
+            <main className="lg:pl-80 asphalt-texture min-h-[calc(100vh-64px)]">
+                {/* Hero Section / Driver Profile */}
+                <section className="p-6 lg:p-10 flex flex-col lg:flex-row gap-8">
+                    {/* Gritty Profile Photo */}
+                    <div className="relative w-full lg:w-1/3 aspect-square group">
+                        <div className="absolute inset-0 bg-primary-container/20 mix-blend-overlay z-10"></div>
+                        <img alt="Driver Profile" className="w-full h-full object-cover filter grayscale brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrJSnYA_qLe9kEvQE_iYs1Lg6iuzDFErR11yVi4kKGCY5qC-V7tTwVAUgTQUWyMeEWkqrL-NMAcJN9-7GjV4uk-5cl89NXdc0H-k2V3z05UVHZwFj_kjKEcz9vgFRFDEk_Kv30O0TGC75-dGW7Dg9ZqHczkGNDMM7oHcyICt3sJqZ_nALiYswUuucqO011joD8IxVp_WrMXvLVdygq2H7gYQ2GxIVsgCr_vSax7T9U8zfZCU5uD5_LbGkuTSz7PgOZj04aHUA3kS4r" />
+                        <div className="absolute bottom-0 left-0 bg-surface-container-lowest p-4 w-full border-l-4 border-primary">
+                            <p className="font-headline font-black text-3xl italic tracking-tighter text-on-surface">ZERO_SIGNAL</p>
+                            <p className="font-label text-secondary text-xs tracking-widest">RANK: #04 // NIGHT_WALKER</p>
+                        </div>
+                    </div>
+                    {/* Car Specs & Stats */}
+                    <div className="flex-1 flex flex-col gap-6">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div className="bg-surface-container-low p-4 border-b-2 border-outline-variant/20">
+                                <p className="text-[10px] text-secondary/60 font-headline uppercase tracking-widest mb-1">CHASSIS</p>
+                                <p className="text-xl font-headline font-bold text-on-surface tracking-tighter italic">S15 SILVIA</p>
+                            </div>
+                            <div className="bg-surface-container-low p-4 border-b-2 border-outline-variant/20">
+                                <p className="text-[10px] text-secondary/60 font-headline uppercase tracking-widest mb-1">OUTPUT</p>
+                                <p className="text-xl font-headline font-bold text-primary tracking-tighter italic tachometer-readout">450HP</p>
+                            </div>
+                            <div className="bg-surface-container-low p-4 border-b-2 border-outline-variant/20">
+                                <p className="text-[10px] text-secondary/60 font-headline uppercase tracking-widest mb-1">TURBO_PSI</p>
+                                <p className="text-xl font-headline font-bold text-on-surface tracking-tighter italic tachometer-readout">1.8 BAR</p>
+                            </div>
+                            <div className="bg-surface-container-low p-4 border-b-2 border-outline-variant/20">
+                                <p className="text-[10px] text-secondary/60 font-headline uppercase tracking-widest mb-1">WEIGHT</p>
+                                <p className="text-xl font-headline font-bold text-on-surface tracking-tighter italic tachometer-readout">1240KG</p>
+                            </div>
+                        </div>
+                        {/* Drive Stats Radar Chart Area */}
+                        <div className="bg-surface-container p-6 relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
+                            <div className="w-48 h-48 radar-bg relative flex items-center justify-center border border-secondary/10">
+                                <div className="absolute inset-0 border border-secondary/20 rounded-full scale-[0.3]"></div>
+                                <div className="absolute inset-0 border border-secondary/20 rounded-full scale-[0.6]"></div>
+                                <div className="absolute inset-0 border border-secondary/20 rounded-full"></div>
+                                <svg className="w-full h-full drop-shadow-[0_0_8px_#D7FFC5]" viewBox="0 0 100 100">
+                                    <polygon fill="none" points="50,10 85,35 75,85 25,85 15,35" stroke="#D7FFC5" strokeWidth="0.5"></polygon>
+                                    <polygon fill="rgba(215,255,197,0.4)" points="50,20 70,40 65,70 35,75 25,45" stroke="#D7FFC5" strokeWidth="2"></polygon>
+                                </svg>
+                                <span className="absolute top-0 text-[8px] font-headline text-secondary">ANGLE</span>
+                                <span className="absolute right-0 text-[8px] font-headline text-secondary">SPEED</span>
+                                <span className="absolute bottom-0 text-[8px] font-headline text-secondary">STYLE</span>
+                                <span className="absolute left-0 text-[8px] font-headline text-secondary">FLOW</span>
+                            </div>
+                            <div className="flex-1 space-y-4 w-full">
+                                <h3 className="font-headline font-black italic text-2xl tracking-tighter border-l-4 border-secondary pl-4">DRIVE_STATS</h3>
+                                <div className="space-y-2">
+                                    <div className="flex justify-between items-end">
+                                        <span className="text-[10px] font-headline tracking-widest opacity-60">DRIFT_PRECISION</span>
+                                        <span className="text-secondary font-headline font-bold tachometer-readout text-sm">94%</span>
+                                    </div>
+                                    <div className="h-1 bg-surface-container-highest w-full">
+                                        <div className="h-full bg-secondary shadow-[0_0_10px_#D7FFC5]" style={{ width: '94%' }}></div>
+                                    </div>
+                                    <div className="flex justify-between items-end">
+                                        <span className="text-[10px] font-headline tracking-widest opacity-60">REACTION_MS</span>
+                                        <span className="text-primary font-headline font-bold tachometer-readout text-sm">180MS</span>
+                                    </div>
+                                    <div className="h-1 bg-surface-container-highest w-full">
+                                        <div className="h-full bg-primary shadow-[0_0_10px_#FFB1C4]" style={{ width: '78%' }}></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Gallery Section */}
+                <section className="px-6 lg:px-10 pb-20">
+                    <div className="flex justify-between items-end mb-8">
+                        <h2 className="font-headline font-black italic text-4xl tracking-tighter text-on-surface uppercase">DRIFT_CLIPS</h2>
+                        <div className="flex gap-2">
+                            <button className="bg-surface-container-highest p-2 hover:bg-primary transition-colors">
+                                <span className="material-symbols-outlined text-sm">grid_view</span>
+                            </button>
+                            <button className="bg-surface-container-highest p-2 opacity-50">
+                                <span className="material-symbols-outlined text-sm">list</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="bg-surface-container group cursor-pointer overflow-hidden border-b-4 border-transparent hover:border-primary transition-all">
+                            <div className="aspect-video relative">
+                                <img alt="Drift Clip 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwoNr8SaH-srSBxY5OXixAeaATLQua5wYBwnBlVaQQavBv0oFzT3NAV7c-1KbgZarwIUnZQWJ_ube9xGN76sbqguAzvslnblWJ3Lu2JFwarlQPECFsG0cmo8GTcBoY-26DG8v6Ux4di9zRwDJULSeg1cDE8sqMR21oZKz61egLPdeL34sGWjGd5g2qQWaFSgfsMjVu8i8DyDfsvkZ2mu-ZJXOgfoIzKWFyF_k-Bhi7P1KVRtMM03cn9KU5sR0MsHGob8tuKV2DhcG1" />
+                                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span className="material-symbols-outlined text-5xl text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>play_arrow</span>
+                                </div>
+                                <div className="absolute top-2 right-2 bg-primary-container text-on-primary-fixed text-[10px] px-2 py-1 font-headline font-bold">NEW_LOG</div>
+                            </div>
+                            <div className="p-4">
+                                <p className="font-headline font-bold text-sm tracking-tight mb-1 uppercase">HAKONE_TURNPIKE_RUN_09</p>
+                                <div className="flex justify-between items-center text-[10px] font-label opacity-50">
+                                    <span>2.4M VIEWS</span>
+                                    <span>4:12</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="bg-surface-container group cursor-pointer overflow-hidden border-b-4 border-transparent hover:border-primary transition-all">
+                            <div className="aspect-video relative">
+                                <img alt="Drift Clip 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxgqe8Ht1gkXSwOCVBg0yrm6701NuTCAyY-R5DiLesn-JVs9TL6Bsm6JwMk9iTVLBbToJYmkBBNCOIyBAIAWAyOXrZdFwVdTCkl8s-MH_uElQEGM2iQgwvBuBLQq4GRCcJwYeEey0LPkkc3cT5dy0c3v2wtk1cgt521sPoXqeGkcqnviIT1BYfcc4QYUGIkMIna5k8Di73edhP2TTVVk_fFA1douR511FUdxo3lXiQEiBXyfQbUR3iw5AMjoQSU245jd6z9f4jqsnu" />
+                                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span className="material-symbols-outlined text-5xl text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>play_arrow</span>
+                                </div>
+                            </div>
+                            <div className="p-4">
+                                <p className="font-headline font-bold text-sm tracking-tight mb-1 uppercase">TURBO_SWAP_TIMELAPSE</p>
+                                <div className="flex justify-between items-center text-[10px] font-label opacity-50">
+                                    <span>890K VIEWS</span>
+                                    <span>12:45</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="bg-surface-container group cursor-pointer overflow-hidden border-b-4 border-transparent hover:border-primary transition-all">
+                            <div className="aspect-video relative">
+                                <img alt="Drift Clip 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfa2XcFLR-gszoGk4lXLsJGu2aRN_eTePlgpnSGYrMFawdBMylcUHMqm3Jnz1pM37H3H7iSda9-MhzXYOUbFv_eEPgyomdUCWTB5md-anqkn5R3-ipW1J6CSuigTwIafu4PlvbPCiBgegs519dY3y50V3mfb97fwNjrpE6kX17CEiDqS82x06CdDBJrQ3gHeFGe7cZRPwnWHhtX8D1YQSa-qt17oKvmtoyfa_okIgGRyyJnKiuXwKlpkDZFmPVv1WH5z6oLgFEcia3" />
+                                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span className="material-symbols-outlined text-5xl text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>play_arrow</span>
+                                </div>
+                            </div>
+                            <div className="p-4">
+                                <p className="font-headline font-bold text-sm tracking-tight mb-1 uppercase">MIDNIGHT_MEET_VLOG</p>
+                                <div className="flex justify-between items-center text-[10px] font-label opacity-50">
+                                    <span>1.1M VIEWS</span>
+                                    <span>08:22</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Build Logs Section */}
+                    <div className="mt-16">
+                        <h2 className="font-headline font-black italic text-4xl tracking-tighter text-on-surface mb-8 uppercase">BUILD_LOGS</h2>
+                        <div className="space-y-4">
+                            <div className="bg-surface-container-low p-6 flex flex-col md:flex-row gap-6 border-l-4 border-secondary/40 hover:border-secondary transition-all">
+                                <div className="w-full md:w-32 h-32 bg-surface-container-highest shrink-0 relative overflow-hidden">
+                                    <img alt="" className="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpQD2gW7ovK21zxlr7ijrnmRND8Rigj58XTav3eJVqvuN7JR0QikGVCP7G51grcYXeuLIsWD-uAz5Y8bbY_BXZgr_T1FSyrMByl_KN0i-zS-KPTyjHKzp4QuX9L_UlwERJdyzqusrYtE4Dwm4wV2V0TMWT8TqrX-E1T1tC87R7zzG8PPcR3_xMMg_CLb2IyZojfocK_upHWjsc4IYRcVec_BTUwseBVwLtfGPgC386yrlrnESvi_pgpVCuFsd6fYbgFaYQ6N5rde3j" />
+                                </div>
+                                <div className="flex-1">
+                                    <div className="flex justify-between items-start mb-2">
+                                        <h4 className="font-headline font-bold text-lg uppercase">SUSPENSION_GEOMETRY_OVERHAUL</h4>
+                                        <span className="bg-secondary/10 text-secondary text-[10px] px-2 py-1 font-headline font-black italic">COMPLETED</span>
+                                    </div>
+                                    <p className="text-on-surface-variant text-sm line-clamp-2 mb-4">Dialing in the camber and toe for the Hakone hairpins. Swapped the factory arms for custom forged units. Adjusting the rebound on the KW coilovers for maximum surface contact during weight transfer.</p>
+                                    <div className="flex gap-4">
+                                        <span className="text-[10px] font-label text-secondary uppercase tracking-widest flex items-center gap-1">
+                                            <span className="material-symbols-outlined text-xs">calendar_today</span> 12_OCT_2024
+                                        </span>
+                                        <span className="text-[10px] font-label text-secondary uppercase tracking-widest flex items-center gap-1">
+                                            <span className="material-symbols-outlined text-xs">chat_bubble</span> 42_COMMENTS
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="bg-surface-container-low p-6 flex flex-col md:flex-row gap-6 border-l-4 border-primary/40 hover:border-primary transition-all">
+                                <div className="w-full md:w-32 h-32 bg-surface-container-highest shrink-0 relative overflow-hidden">
+                                    <img alt="" className="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4h5djES5_qJImvKAoRFaZ4U9g_QAH2FAcDfK9Q3onurjO07vbUYrrr-bF1h2qkTCvNFZGX9-JLPK2QxcETowaTSiIMVvY-3qwu89FxXPHNXKTcpeSMQhsGVSeKW3IAxXSxc0zCQKBMc8Ftzphu6uK3wHCCh9Zg86BZkE-5xvjpTWQRevbi6CDROxYKSm9CkUx8jXFtsMJDVt0UXvw-re_cMMP8y1y98lxxMqg6PnAb4phGHk035SUmjbLF7lco7koCP7F5nc6uaeq" />
+                                </div>
+                                <div className="flex-1">
+                                    <div className="flex justify-between items-start mb-2">
+                                        <h4 className="font-headline font-bold text-lg uppercase">ECU_REMAP_STAGE_3</h4>
+                                        <span className="bg-primary/10 text-primary text-[10px] px-2 py-1 font-headline font-black italic">IN_PROGRESS</span>
+                                    </div>
+                                    <p className="text-on-surface-variant text-sm line-clamp-2 mb-4">Pushing the SR20DET further. Tuning for anti-lag and adjusting fuel maps for high-octane mix. Targeting a flat torque curve between 3500 and 7000 RPM.</p>
+                                    <div className="flex gap-4">
+                                        <span className="text-[10px] font-label text-primary uppercase tracking-widest flex items-center gap-1">
+                                            <span className="material-symbols-outlined text-xs">calendar_today</span> 08_OCT_2024
+                                        </span>
+                                        <span className="text-[10px] font-label text-primary uppercase tracking-widest flex items-center gap-1">
+                                            <span className="material-symbols-outlined text-xs">chat_bubble</span> 156_COMMENTS
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            {/* Footer */}
+            <footer className="md:ml-72 bg-[#1C1B1B] py-8 px-10 flex flex-col md:flex-row justify-between items-end border-t-4 border-double border-[#5C3F46] bg-[url('https://www.transparenttextures.com/patterns/asphalt-dark.png')]">
+                <div className="mb-4 md:mb-0">
+                    <p className="text-[#FFB1C4] font-bold font-headline mb-2 uppercase">TOUGE_UNDERGROUND</p>
+                    <p className="font-mono text-[10px] tracking-tighter uppercase text-[#E5E2E1]">©2024_MIDNIGHT_TOUGE_INDUSTRIAL_GRIT.ALL_RIGHTS_RESERVED.</p>
+                </div>
+                <div className="flex gap-6">
+                    <a className="font-mono text-[10px] tracking-tighter uppercase text-[#E5E2E1]/40 hover:text-[#D7FFC5] hover:tracking-widest transition-all" href="#">DISCORD_LINK</a>
+                    <a className="font-mono text-[10px] tracking-tighter uppercase text-[#E5E2E1]/40 hover:text-[#D7FFC5] hover:tracking-widest transition-all" href="#">GARAGE_SPECS</a>
+                    <a className="font-mono text-[10px] tracking-tighter uppercase text-[#E5E2E1]/40 hover:text-[#D7FFC5] hover:tracking-widest transition-all" href="#">LEGAL_MODS</a>
+                </div>
+            </footer>
+
+        </div>
+    );
+}

@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scanline-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 0, 127, 0.1);
+    z-index: 40;
+    pointer-events: none;
+  }
+
+  .static-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  .rain-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  .glitch-text:hover {
+    animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+    text-shadow: 2px 0 #ff007f, -2px 0 #D7FFC5;
+  }
+
+  .industrial-border {
+    border: 1px solid rgba(255, 0, 127, 0.3);
+    position: relative;
+  }
+
+  .industrial-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ff007f;
+    border-left: 2px solid #ff007f;
+  }
+
+  .industrial-border::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #ff007f;
+    border-right: 2px solid #ff007f;
+  }
+
+  .smoke-particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    filter: blur(20px);
+    pointer-events: none;
+    z-index: 21;
+  }
+
+  .btn-neon-glow {
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.6);
+    transition: all 0.3s ease;
+  }
+
+  .btn-neon-glow:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 127, 1), 0 0 60px rgba(255, 0, 127, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .header-glow {
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.8), 0 0 20px rgba(255, 0, 127, 0.4);
+  }
+
+  .asphalt-texture {
+    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDt8qrp2ojGuec7jiCSRWt2sheRkB70G4Rept1AhwOUgWXscX5VnFOtsvcZh4VTjVfG5CbsuYqHS4Pmb72hiao1RHMCMVcPSNsbDwdkrirAV_7hO9IvX_OHrTHXZ0VNnNo_Wim__jTK2K0dV2iawEY9ij-abZhE5bEKtuYe8XE6es7ZXE-RL2hFTxXGO9TMxVgSCDXxWMMGgYQkEIPuUqXCBWub75lC4hMZtFpWsZhfKVt-rImJF4byyxyFUZfDu13wDhmI6KNa_oe8');
+  }
+
+  .glitch-hover:hover {
+    text-shadow: 2px 0 #ff4a8d, -2px 0 #0dd;
+  }
+
+  .tachometer-readout {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.05em;
+  }
+
+  .radar-bg {
+    background: radial-gradient(circle, rgba(215, 255, 197, 0.1) 0%, rgba(19, 19, 19, 0) 70%);
+  }
+
+  .glitch-border {
+    box-shadow: 2px 0 0 0 #ff4a8d, -2px 0 0 0 #0dd;
+  }
+
+  .custom-clip {
+    clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
+  }
+
+  .dog-ear {
+    clip-path: polygon(0 0, 92% 0, 100% 8%, 100% 100%, 0 100%);
+  }
+}
